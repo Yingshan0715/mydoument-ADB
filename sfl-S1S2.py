@@ -6,7 +6,8 @@ from ADB.personal.anhuo1029 import diaoyong_fuzhu, diaoyong_tracking, diaoyong_f
 import ADB.personal.anhuo1029 as dig
 from datetime import datetime, timedelta
 
-set_dglc(2, False, 'dp', 0, 0, 2, 2, 2)
+set_dglc(2, False, 'dp', 0, 0, 0, 2, 2)
+set_pause(0.2,0.4)
 
 dig.t180 = somedays(1109, 180)
 dig.t365 = somedays(1109, 365)
@@ -18,9 +19,9 @@ tHs = somedays('2018-10-10', 90)
 t2bef = '2018-10-20'
 t2end = '2018-11-07'
 
-pinpaici = '薇诺娜,薇诺娜特护霜'
-pinleici = '特护霜,保湿霜,舒敏润肤水,舒敏面膜,薇诺娜喷雾'
-jingpinci = '珂润,百雀羚,理肤泉,丝塔芙,芙丽芳丝'
+pinpaici = '丝芙兰,丝芙兰卸妆水'
+pinleici = '卸妆水,蚕丝补水保湿面膜,身体乳,染唇膏,化妆棉'
+jingpinci = 'MAC,MAC口红,玛丽黛佳口红,迪奥口红,tf'
 
 
 dyname = 'S2'
@@ -30,7 +31,7 @@ scname = '1107'
 #depths_of_aipl(pinpaici, pinleici, jingpinci, tAs, tIs, t2bef, namess=dyname)
 
 #diaoyong_fuzhu(t2bef, t2end, scname)
-#diaoyong_fuzhu2(t2bef, t2end, scname)#
+#diaoyong_fuzhu2(t2bef, t2end, scname)
 
 #diaoyong_tracking(t2bef, t2end, dyname, scname, 'jindian')
 #diaoyong_tracking(t2bef, t2end, dyname, scname, 'dianjijindian')
@@ -39,5 +40,5 @@ scname = '1107'
 #diaoyong_tracking(t2bef, t2end, dyname, scname, 'zuanzhanbaoguang')
 #diaoyong_tracking(t2bef, t2end, dyname, scname, 'zuanzhandianji')
 #diaoyong_tracking(t2bef, t2end, dyname, scname, 'baoguangjindian')
-#diaoyong_tracking(t2bef, t2end, dyname, scname, 'bg-jd-sj')
+diaoyong_tracking(t2bef, t2end, dyname, scname, 'bg-jd-sj')
 diaoyong_tracking(t2bef, t2end, dyname, scname, 'bg-jd-yg')

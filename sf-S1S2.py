@@ -18,9 +18,9 @@ tHs = somedays('2018-10-10', 90)
 t2bef = '2018-10-20'
 t2end = '2018-11-07'
 
-pinpaici = '薇诺娜,薇诺娜特护霜'
-pinleici = '特护霜,保湿霜,舒敏润肤水,舒敏面膜,薇诺娜喷雾'
-jingpinci = '珂润,百雀羚,理肤泉,丝塔芙,芙丽芳丝'
+pinpaici = '苏菲,苏菲卫生巾'
+pinleici = '裸感S,口袋魔法,弹力贴身,超熟睡,安心裤'
+jingpinci = 'abc,七度空间,护舒宝,高洁丝,乐而雅'
 
 
 dyname = 'S2'
@@ -30,14 +30,14 @@ scname = '1107'
 #depths_of_aipl(pinpaici, pinleici, jingpinci, tAs, tIs, t2bef, namess=dyname)
 
 #diaoyong_fuzhu(t2bef, t2end, scname)
-#diaoyong_fuzhu2(t2bef, t2end, scname)#
+#diaoyong_fuzhu2(t2bef, t2end, scname)
 
 #diaoyong_tracking(t2bef, t2end, dyname, scname, 'jindian')
-#diaoyong_tracking(t2bef, t2end, dyname, scname, 'dianjijindian')
-#diaoyong_tracking(t2bef, t2end, dyname, scname, 'shoujiajindian')
-#diaoyong_tracking(t2bef, t2end, dyname, scname, 'yugoujindian')
-#diaoyong_tracking(t2bef, t2end, dyname, scname, 'zuanzhanbaoguang')
-#diaoyong_tracking(t2bef, t2end, dyname, scname, 'zuanzhandianji')
-#diaoyong_tracking(t2bef, t2end, dyname, scname, 'baoguangjindian')
-#diaoyong_tracking(t2bef, t2end, dyname, scname, 'bg-jd-sj')
+diaoyong_tracking(t2bef, t2end, dyname, scname, 'dianjijindian')
+diaoyong_tracking(t2bef, t2end, dyname, scname, 'shoujiajindian')
+diaoyong_tracking(t2bef, t2end, dyname, scname, 'yugoujindian')
+diaoyong_tracking(t2bef, t2end, dyname, scname, 'zuanzhanbaoguang')
+diaoyong_tracking(t2bef, t2end, dyname, scname, 'zuanzhandianji')
+diaoyong_tracking(t2bef, t2end, dyname, scname, 'baoguangjindian')
+diaoyong_tracking(t2bef, t2end, dyname, scname, 'bg-jd-sj')
 diaoyong_tracking(t2bef, t2end, dyname, scname, 'bg-jd-yg')
