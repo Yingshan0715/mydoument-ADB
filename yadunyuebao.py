@@ -1,8 +1,5 @@
-from ADB import aalc, set_pause,set_wall, swtime, timedelta
+from ADB import aalc, set_pause, swtime, timedelta
 from ADB.actionfunc import datetime
-
-set_pause(0.05)
-set_wall(1)
 
 
 def run(with_goumai=False):
