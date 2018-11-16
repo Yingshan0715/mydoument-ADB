@@ -3,15 +3,17 @@ from ADB import set_pause, t180, swtime
 from datetime import datetime, timedelta
 from ADB import somedays
 
-tAs = somedays('2018-11-1', 90)
-tIs = somedays('2018-11-1', 180)
-tHs = somedays('2018-11-8', 90)
+set_pause(0.11,0.33)
+
+tAs = somedays('2018-11-16', 90)
+tIs = t180
+tHs = somedays('2018-11-16', 90)
 
 
-t2bef = swtime('2018-11-8', False)
+t2bef = swtime('2018-11-16', False)
 t2end = t2bef
 
-set_dglc(2, True, 'gj', 0, 0, 3, 3, 3)
+set_dglc(2, True, 'gj', 0, 0, 2, 2, 2)
 
 with open('sousuoci/meizanchen.txt', 'r', encoding='utf-8') as f:
     sousuoci = f.read()
@@ -19,5 +21,5 @@ with open('sousuoci/meizanchen.txt', 'r', encoding='utf-8') as f:
     print(sousuoci)
     print(type(sousuoci))
 
-#fuzhu_of_depth(tAs, tIs, tHs, t2bef, t2end, sousuoci, False, '国周2')
-depths_of_aiplxModel(tAs, tIs, t2bef, t2end, 'no', '国周2')
+fuzhu_of_depth(tAs, tIs, tHs, t2bef, t2end, sousuoci, False, '国周3')
+#depths_of_aiplxModel(tAs, tIs, t2bef, t2end, 'no', '国周3')
