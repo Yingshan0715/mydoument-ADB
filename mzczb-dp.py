@@ -21,5 +21,5 @@ with open('sousuoci/meizanchen.txt', 'r', encoding='utf-8') as f:
     print(sousuoci)
     print(type(sousuoci))
 
-fuzhu_of_depth(tAs, tIs, tHs, t2bef, t2end, sousuoci, False, '旗周3')
-#depths_of_aiplxModel(tAs, tIs, t2bef, t2end, 'no', '旗周3')
+#fuzhu_of_depth(tAs, tIs, tHs, t2bef, t2end, sousuoci, False, '旗周3')
+depths_of_aiplxModel(tAs, tIs, t2bef, t2end, 'no', '旗周3')
