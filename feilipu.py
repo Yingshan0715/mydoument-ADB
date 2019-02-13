@@ -1,20 +1,110 @@
-from ADB.Demo import set_dglc
-from ADB.Demo import fuzhu_of_ss_hy_hy
-from ADB.Demo import depths_of_aipl_xModel
-from ADB.Demo import zszw_new_and_old_convert
-from ADB import t180, somedays
+from ADB import AutoDatabank
+from ADB import set_pause
+from ADB import swtime, somedays
+
+set_pause(0.101, 0.101)
+
+aa = AutoDatabank(4, False, 'dp')
+aa.zszw_order = 7
+
+t1 = '2018-8-1'
+t2 = '2018-11-10'
+t3 = '2018-10-19'
 
 
-tAs = t180
-tIs = t180
-t2bef = '2018-9-9'
-t2end = '2018-9-10'
-tHs = somedays(t2bef)
+def zszw1(n):
+    aa.cp()
+    aa.zszw([n, n], t1, t2)
+    aa.zszw([1, 99], t1, t2, 3)
+    aa.sp('钻石展位X%s' % i)
 
-sousuoci = '电动牙刷,飞利浦,电动牙刷女,电动牙刷飞利,飞利浦电动牙,飞利浦电动牙刷,飞利浦电动剃须刀,飞利浦官方旗舰店,飞利浦,飞利浦剃须刀,剃须刀 飞利浦,飞利浦剃须刀男'
 
-set_dglc(4, False, 'dp', 0, 2, 2, 5, 6)
+def zszs_A(n, goumai=False):
+    aa.cp()
+    aa.zdy('【feilipu】')
+    if goumai:
+        jbc = 1
+        aa.dp(5, '2018-11-11', '2018-11-11', 2)
+        namess = '【购买'
+    else:
+        jbc = 2
+        namess = ''
+    aa.qll(234, t1, t3, jbc)
+    aa.qll(1, t1, t3, 3)
+    aa.zszw([n, n], t1, t2, 1)
+    aa.sp('A人群%s次%s' % (n, namess))
 
-#fuzhu_of_ss_hy_hy(tAs, tIs, tHs, t2bef, t2end, sousuoci, pph=True, namess='【勿删】Zoe')
-depths_of_aipl_xModel(tAs, tIs, t2bef, t2end, 'No', namess='【勿删】Zoe')
-depths_of_aipl_xModel(tAs, tIs, t2bef, t2end, 'goumai', namess='【勿删】Zoe')
+
+def zszs_I(n, goumai=False):
+    aa.cp()
+    aa.zdy('【feilipu】')
+    if goumai:
+        jbc = 1
+        aa.dp(5, '2018-11-11', '2018-11-11', 2)
+        namess = '【购买'
+    else:
+        jbc = 2
+        namess = ''
+    aa.qll(34, t1, t3, jbc)
+    aa.qll(2, t1, t3, 3)
+    aa.zszw([n, n], t1, t2, 1)
+    aa.sp('I人群%s次%s' % (n, namess))
+
+
+def zszs_PL(n, goumai=False):
+    aa.cp()
+    aa.zdy('【feilipu】')
+    if goumai:
+        jbc = 1
+        aa.dp(5, '2018-11-11', '2018-11-11', 2)
+        namess = '【购买'
+    else:
+        jbc = 2
+        namess = ''
+    aa.qll(34, t1, t3, jbc)
+    aa.zszw([n, n], t1, t2, 1)
+    aa.sp('PL人群%s次%s' % (n, namess))
+
+
+def zszs_ling(n, goumai=False):
+    aa.cp()
+    aa.zdy('【feilipu】')
+    if goumai:
+        jbc = 1
+        aa.dp(5, '2018-11-11', '2018-11-11', 2)
+        namess = '【购买'
+    else:
+        jbc = 2
+        namess = ''
+    aa.qll(1234, t1, '2018-10-19', jbc)
+    aa.qll(1234, t1, '2018-11-11', 3)
+    aa.zszw([n, n], t1, t2, 1)
+    aa.sp('Ling人群%s次%s' % (n, namess))
+
+if __name__ == '__main__':
+    # aa.cp()
+    #aa.zszw([1, 99], t1, t2, 3)
+    #aa.sp('钻石展位总' )
+
+    # for i in range(1, 21):
+    #    zszw1(i)
+
+    for i in range(1, 11):
+        zszs_A(i)
+    for i in range(1, 11):
+        zszs_A(i, True)  # A
+
+    for i in range(1, 11):
+        zszs_I(i)
+    for i in range(1, 11):
+        zszs_I(i, True)  # I
+
+    for i in range(1, 11):
+        zszs_PL(i)
+    for i in range(1, 11):
+        zszs_PL(i, True)  # PL
+
+    for i in range(1, 11):
+        zszs_ling(i)
+    for i in range(1, 11):
+        zszs_ling(i, True)  # ling
