@@ -1,29 +1,19 @@
-from ADB.personal.yapeia import set_dglc, fuzhu_of_depth, depths_of_aiplxModel
+from ADB.personal.yapeia import set_dglc, fuzhu_of_depth, depths_of_aipl
 from ADB import set_pause, t180, swtime
 from datetime import datetime, timedelta
 from ADB import somedays
 
 set_dglc(2, False, 'dp', 0, 0, 2, 2, 2, '雅培')
 
-
 tAs = swtime('2018-12-10')
 tIs = swtime('2018-9-10')
+tHs = somedays('2019-3-4', 90)
 
-t2end = '2019-2-11'
+t2bef = '2019-3-3'
+t2end = '2019-3-3'
 
-for i in ['2019-1-21']:  # '2019-2-17','2019-2-4', 
+dy_name = '0303'
 
-    t2bef = swtime(i, False) + timedelta(1)
-    tHs = somedays(t2bef, 90)
-    dy_name = i[5:]
+#fuzhu_of_depth(tAs, tIs, tHs, t2bef, t2end, 'Nowords', namess=dy_name)
 
-    fuzhu_of_depth(tAs, tIs, tHs, t2bef, t2end, 'Nowords', namess=dy_name)
-
-
-for i in ['2019-2-17', '2019-2-4', '2019-1-21']:
-
-    t2bef = swtime(i, False) + timedelta(1)
-    tHs = somedays(t2bef, 90)
-    dy_name = i[5:]
-
-    depths_of_aiplxModel(tAs, tIs, t2bef, t2end, 'no', namess=dy_name)
+depths_of_aipl(tAs, tIs, t2bef, t2end, 'no', namess=dy_name)
